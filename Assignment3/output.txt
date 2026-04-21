@@ -1,0 +1,29 @@
+Type | Size | Algorithm | Time (ms)
+--------------------------------------------------
+random | 1000 | Insertion Sort | 23.945 ms
+random | 1000 | Merge Sort | 2.344 ms
+random | 1000 | Quick Sort | 2.79 ms
+sorted | 1000 | Insertion Sort | 0.12 ms
+sorted | 1000 | Merge Sort | 1.529 ms
+sorted | 1000 | Quick Sort | 1.741 ms
+reverse | 1000 | Insertion Sort | 44.408 ms
+reverse | 1000 | Merge Sort | 3.983 ms
+reverse | 1000 | Quick Sort | 1.689 ms
+random | 5000 | Insertion Sort | 689.027 ms
+random | 5000 | Merge Sort | 30.518 ms
+random | 5000 | Quick Sort | 15.887 ms
+sorted | 5000 | Insertion Sort | 1.015 ms
+sorted | 5000 | Merge Sort | 14.686 ms
+sorted | 5000 | Quick Sort | 18.872 ms
+reverse | 5000 | Insertion Sort | 1630.536 ms
+reverse | 5000 | Merge Sort | 15.628 ms
+reverse | 5000 | Quick Sort | 17.556 ms
+random | 10000 | Insertion Sort | 2714.587 ms
+random | 10000 | Merge Sort | 32.757 ms
+random | 10000 | Quick Sort | 20.386 ms
+sorted | 10000 | Insertion Sort | 1.158 ms
+sorted | 10000 | Merge Sort | 20.379 ms
+sorted | 10000 | Quick Sort | 20.122 ms
+reverse | 10000 | Insertion Sort | 4888.048 ms
+reverse | 10000 | Merge Sort | 23.471 ms
+reverse | 10000 | Quick Sort | 18.887 ms
