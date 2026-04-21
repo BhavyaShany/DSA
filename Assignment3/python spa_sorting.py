@@ -13,7 +13,7 @@ Semester:				2
 Batch:					2025-26 
 Submitted To:			Mrs. Neetu Chauhan 
 """
-
+#----------------------------------------------------------
 import random
 import time
 import sys
@@ -23,11 +23,7 @@ sys.setrecursionlimit(20000)
 
 
 # Task 1: Sorting Algorithms
-# -----------------------------
-
-
-
-# 1. Insertion Sort (Stable, In-place)
+# 1. Insertion Sort 
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -40,7 +36,7 @@ def insertion_sort(arr):
 
 
 
-# 2. Merge Sort (Stable, Out-of-place)
+# 2. Merge Sort 
 def merge(left, right):
     result = []
     i = j = 0
@@ -70,7 +66,7 @@ def merge_sort(arr):
 
 
 
-# 3. Quick Sort (In-place, Not Stable)
+# 3. Quick Sort 
 def partition(arr, low, high):
     import random
     
@@ -88,12 +84,12 @@ def partition(arr, low, high):
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
 
-
 def quick_sort(arr, low, high):
     if low < high:
         pi = partition(arr, low, high)
         quick_sort(arr, low, pi - 1)
         quick_sort(arr, pi + 1, high)
+
 
 
 # Wrapper for quick sort
@@ -102,13 +98,10 @@ def quick_sort_wrapper(arr):
     return arr
 
 
-
-
+#------------------------------------------------------------------------
 
 
 # Task 2: Timing Utility
-# -----------------------------
-
 def measure_time(sort_func, arr):
     arr_copy = arr.copy()
     start = time.time()
@@ -123,9 +116,11 @@ def measure_time(sort_func, arr):
 
 
 
+#------------------------------------------------------------------------
+
 
 # Dataset Generator
-# -----------------------------
+
 
 def generate_datasets():
     sizes = [1000, 5000, 10000]
@@ -142,9 +137,10 @@ def generate_datasets():
 
 
 
+#------------------------------------------------------------------------
 
 # Correctness Check
-# -----------------------------
+
 
 def check_correctness():
     test = [5, 2, 9, 1, 5, 6]
@@ -162,8 +158,10 @@ def check_correctness():
 
 
 
+#------------------------------------------------------------------------
+
 # Run Experiments
-# -----------------------------
+
 
 def run_experiments():
     datasets = generate_datasets()
@@ -187,8 +185,9 @@ def run_experiments():
 
 
 
+#------------------------------------------------------------------------
+
 # Save Output
-# -----------------------------
 
 def save_output(results):
     with open("output.txt", "w") as f:
@@ -200,8 +199,9 @@ def save_output(results):
 
 
 
+#------------------------------------------------------------------------
+
 # Main
-# --------
 
 def main():
     print(check_correctness())
